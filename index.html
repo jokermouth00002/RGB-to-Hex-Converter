@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RGB TO HEX CONVERTER</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class='container' id='RGB'>
+        <div>
+            <div style="font-size:40px; ">RGB</div>
+
+            <div scope="row" style="display: flex; min-width: 50vw;">
+                <div class='col-0.5' style="font-size:25px">R: </div>
+                <div class="col-6 input-group flex-nowrap">
+                    <input type="text" class="form-control" id='input-R'>
+                </div>
+                <div class="redSquare">
+                </div>
+            </div>
+
+            <div style="min-height:5%"></div>
+
+            <div scope="row" style="display: flex; min-width: 50vw;">
+                <div class='col-0.5' style="font-size:25px">G:</div>
+                <div class="col-6 input-group flex-nowrap">
+                    <input type="text" class="form-control" id='input-G'>
+                </div>
+                <div class="greenSquare">
+                </div>
+            </div>
+
+            <div style="min-height:5%"></div>
+
+            <div scope="row" style="display: flex; min-width: 50vw;">
+                <div class='col-0.5' style="font-size:25px">B: </div>
+                <div class="col-6 input-group flex-nowrap">
+                    <input type="text" class="form-control" id='input-B'>
+                </div>
+                <div class="blackSquare"></div>
+            </div>
+
+            <div style="min-height:5%"></div>
+
+            <div scope="row" style="display: flex; min-width: 50vw;" id='colorButton'>
+                <button type="button" class="col-1.5 btn btn-primary">Convert</button>
+            </div>
+        </div>
+        <div>
+            <div style="font-size:40px; position: relative; left:2%;">HEX</div>
+
+            <div scope="row" style="display: flex; min-width: 50vw;">
+                <div class="col-4 input-group flex-nowrap">
+                    <input type="text" class="form-control" id='colorCode'>
+                </div>
+
+            </div>
+            <div style="min-height:5%"></div>
+
+            <div scope="row" style="position: relative; left:2%;">
+                <div class="colorSquare"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+<style>
+    #RGB {
+        display: flex;
+        position: relative;
+        margin: 15%;
+    }
+
+    .redSquare {
+        width: 2.5vw;
+        height: 2.5vw;
+        background: red;
+    }
+
+    .greenSquare {
+        width: 2.5vw;
+        height: 2.5vw;
+        background: green;
+    }
+
+    .blackSquare {
+        width: 2.5vw;
+        height: 2.5vw;
+        background: black;
+    }
+
+    .colorSquare {
+        width: 6.5vw;
+        height: 6.5vw;
+        background: black;
+    }
+</style>
+
+</html>
